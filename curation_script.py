@@ -8,12 +8,12 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 dspecs=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'Data Specification')
 dspecs=dspecs.iloc[:12]
 
-df_clinical=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'Patient_clinical_data')
-df_tsample=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'Tissue Sample Metadata')
-df_sprot=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'Serum Protein data')
-df_rpkm=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'RNA-seq (RPKM)')
+df_clinical=pd.read_excel('Technical Test - Data Wrangling.xlsx', 'Patient_clinical_data')
+df_tsample=pd.read_excel('Technical Test - Data Wrangling.xlsx', 'Tissue Sample Metadata')
+df_sprot=pd.read_excel('Technical Test - Data Wrangling.xlsx', 'Serum Protein data')
+df_rpkm=pd.read_excel('Technical Test - Data Wrangling.xlsx', 'RNA-seq (RPKM)')
 
-df_example=pd.read_excel('Technical Test - Data Wrangling - v20240923.xlsx', 'Example report')
+df_example=pd.read_excel('Technical Test - Data Wrangling.xlsx', 'Example report')
 
 #transpose the rna-seq data
 rpkm_cols=df_rpkm.pop('GeneID')
